@@ -264,7 +264,7 @@ class SaveForest extends React.Component{
 						</div>
 					</div>
 					<input className = { styles.word_input } type = 'text' ref = 'input' onKeyDown = {(e) => this.keyDown(e)} placeholder = '请在这里输入单词，回车键提交' onChange = {(e) => this.inputChange(e)} disabled = { !time || time <= 0 }/>
-					<button onClick = {() => this.startGame()}>开始游戏</button>
+					<button onClick = {() => this.startGame()} disabled = { !!time || time > 0 }>开始游戏</button>
 				</div>
 				<div className = { styles.result } style = {{ ...gameAreaStyle, width : 200 }}>
 					<div className = { styles.result_title }>RESULT</div>
