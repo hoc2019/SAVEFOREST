@@ -70,6 +70,7 @@ class SaveForest extends React.Component{
 		for(let i = 0 ; i < array.length ; i++){
 			if(x === array[i].x){
 				flag = true;
+				break;
 			}
 		}
 		return flag
